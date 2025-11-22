@@ -1,8 +1,7 @@
 # Site settings
-title: My Blog
-description: A blog powered by Jekyll and GitHub Pages
-author: Your Name
-email: your.email@example.com
+title: mc's blog
+description: tech blog
+author: mc
 
 # Build settings
 markdown: kramdown
