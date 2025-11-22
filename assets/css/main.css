@@ -8,7 +8,8 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: #e4e4e4;
+  background-color: #1a1a1a;
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
@@ -16,7 +17,7 @@ body {
 
 /* Header and Navigation */
 header {
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid #333;
   margin-bottom: 40px;
   padding-bottom: 20px;
 }
@@ -26,7 +27,7 @@ header nav h1 {
 }
 
 header nav h1 a {
-  color: #333;
+  color: #e4e4e4;
   text-decoration: none;
 }
 
@@ -37,12 +38,12 @@ header nav ul {
 }
 
 header nav ul li a {
-  color: #666;
+  color: #999;
   text-decoration: none;
 }
 
 header nav ul li a:hover {
-  color: #333;
+  color: #e4e4e4;
 }
 
 /* Main content */
@@ -58,7 +59,7 @@ main {
 .post-item {
   margin-bottom: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #333;
 }
 
 .post-item h3 {
@@ -66,22 +67,22 @@ main {
 }
 
 .post-item h3 a {
-  color: #333;
+  color: #e4e4e4;
   text-decoration: none;
 }
 
 .post-item h3 a:hover {
-  color: #0066cc;
+  color: #66b3ff;
 }
 
 .post-meta {
-  color: #666;
+  color: #999;
   font-size: 0.9em;
   margin-bottom: 10px;
 }
 
 .post-excerpt {
-  color: #555;
+  color: #aaa;
 }
 
 /* Single post */
@@ -118,7 +119,8 @@ main {
 }
 
 .post-content code {
-  background-color: #f4f4f4;
+  background-color: #2d2d2d;
+  color: #f8f8f2;
   padding: 2px 6px;
   border-radius: 3px;
   font-family: "Monaco", "Courier New", monospace;
@@ -126,7 +128,7 @@ main {
 }
 
 .post-content pre {
-  background-color: #f4f4f4;
+  background-color: #2d2d2d;
   padding: 15px;
   border-radius: 5px;
   overflow-x: auto;
@@ -141,26 +143,26 @@ main {
 .post-tags {
   margin-top: 30px;
   padding-top: 20px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #333;
 }
 
 .post-tags .tag {
   display: inline-block;
-  background-color: #f0f0f0;
+  background-color: #2d2d2d;
   padding: 3px 10px;
   margin-right: 5px;
   border-radius: 3px;
   font-size: 0.9em;
-  color: #666;
+  color: #999;
 }
 
 /* Footer */
 footer {
   margin-top: 60px;
   padding-top: 20px;
-  border-top: 2px solid #eee;
+  border-top: 2px solid #333;
   text-align: center;
-  color: #666;
+  color: #999;
   font-size: 0.9em;
 }
 
