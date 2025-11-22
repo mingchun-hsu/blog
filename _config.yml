@@ -3,6 +3,10 @@ title: mc's blog
 description: tech blog
 author: mc
 
+# URL settings
+url: "https://blog.mchotguy.pro"
+baseurl: "/blog"
+
 # Build settings
 markdown: kramdown
 theme: minima
