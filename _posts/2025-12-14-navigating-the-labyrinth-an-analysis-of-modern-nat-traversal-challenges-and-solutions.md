@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Navigating the Labyrinth: An Analysis of Modern NAT Traversal Challenges and Solutions"
-date: 2025-12-15 00:00:00
+date: 2025-12-14 00:00:00
 tags: [networking, NAT, P2P, IPv6, cloud]
 ---
 

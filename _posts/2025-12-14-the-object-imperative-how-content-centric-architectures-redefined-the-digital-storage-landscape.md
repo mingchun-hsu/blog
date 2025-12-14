@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Object Imperative: How Content-Centric Architectures Redefined the Digital Storage Landscape"
-date: 2025-12-15 00:00:00
+date: 2025-12-14 00:00:00
 tags: [architecture, storage, cloud, iOS, database]
 ---
 
