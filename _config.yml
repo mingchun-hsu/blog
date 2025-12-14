@@ -28,7 +28,7 @@ exclude:
   - README.md
 
 # Permalink structure
-permalink: /:year/:month/:day/:title/
+permalink: /:title/
 
 # Pagination
 paginate: 5
