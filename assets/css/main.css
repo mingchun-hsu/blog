@@ -140,6 +140,35 @@ main {
   padding: 0;
 }
 
+/* Tables */
+.post-content table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  background-color: #2d2d2d;
+}
+
+.post-content table th,
+.post-content table td {
+  padding: 12px 15px;
+  border: 1px solid #444;
+  text-align: left;
+}
+
+.post-content table th {
+  background-color: #333;
+  font-weight: 600;
+  color: #e4e4e4;
+}
+
+.post-content table td {
+  color: #ccc;
+}
+
+.post-content table tr:hover {
+  background-color: #363636;
+}
+
 .post-tags {
   margin-top: 30px;
   padding-top: 20px;
