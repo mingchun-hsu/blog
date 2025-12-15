@@ -55,6 +55,17 @@ Without an Asset-centric abstraction, no file-based interface could present thes
 
 This architecture decoupled the conceptual photo from its physical representation. Users interacted with semantic objects—memories—not files. For iOS, the file system became merely an implementation detail. This device-local database model was also the precursor to iCloud's distributed synchronization model.
 
+### The User's Choice: A Paradigm Revealed
+
+The distinction between these two architectural models becomes tangible in everyday user interactions. When receiving photos via **AirDrop** on macOS, users are explicitly asked to choose between two fundamentally different approaches:
+
+* **Import to Photos Library:** The photo becomes an Asset object, managed by the database, enriched with metadata, and synchronized across devices via iCloud.
+* **Save as File:** The photo remains a discrete file, placed in a user-chosen location, managed through the traditional file system hierarchy.
+
+This choice is not merely a UI convenience—it is a direct manifestation of the architectural divide discussed throughout this paper. The first option leverages the full power of the content-centric model: automatic organization, semantic search, AI-driven recognition, and cross-device synchronization. The second option offers traditional user control but sacrifices all the intelligent features that the object model provides.
+
+Importantly, most users instinctively choose the Photos Library option, demonstrating how thoroughly the content-centric paradigm has reshaped user expectations. The file system has become the fallback, not the default.
+
 ---
 
 ## 4.0 Scaling the New Paradigm: iCloud and the Synchronization of Object States
