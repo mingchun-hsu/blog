@@ -5,13 +5,13 @@ date: 2025-12-18 10:00:00 +0800
 tags: [cloud-storage, macos, windows, filesystem, architecture, system-design]
 ---
 
+<img src="/assets/images/2025-12-18-cloud-file-comparison.png" alt="Cloud file architecture comparison" style="max-width: 100%; height: auto;">
+
 ## 1.0 Introduction: The Invisible Difference in Your Cloud Files
 
 If you use a cloud storage service like Dropbox or Google Drive, you've likely accessed your files on both Mac and Windows devices. From the outside, the experience seems nearly identical: your cloud folders appear in Finder or File Explorer, and your files sync seamlessly. It's easy to assume that, under the hood, both operating systems handle these cloud files in a similar way.
 
 The reality is surprisingly different. macOS and Windows have fundamentally different philosophies for integrating cloud storage into their core. These opposing approaches result in significant architectural differences that directly impact how developers build sync applications and, indirectly, shape the user experience. This article will reveal the most surprising and impactful of these differences.
-
-![Cloud file experience comparison](/assets/images/2025-12-18-cloud-file-comparison.png)
 
 ## 2.0 On a Mac, a File's Path Is Just a Suggestion
 
