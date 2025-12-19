@@ -10,16 +10,24 @@ title: Home
     {% for post in site.posts %}
       <li>
         <article class="post-item">
-          <h3>
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h3>
-          <p class="post-meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}">
-              {{ post.date | date: "%B %-d, %Y" }}
-            </time>
-          </p>
-          {% if post.excerpt %}
-            <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+          <div class="post-item-content">
+            <h3>
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h3>
+            {% if post.excerpt %}
+              <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+            {% endif %}
+            <p class="post-meta">
+              <time datetime="{{ post.date | date_to_xmlschema }}">
+                {{ post.date | date: "%B %-d, %Y" }}
+              </time>
+            </p>
+          </div>
+
+          {% if post.image %}
+          <div class="post-thumbnail">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+          </div>
           {% endif %}
         </article>
       </li>
