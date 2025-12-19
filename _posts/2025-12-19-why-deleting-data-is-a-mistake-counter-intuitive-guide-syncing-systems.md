@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why Deleting Data Is a Mistake: A Counter-intuitive Guide to Syncing Systems"
-date: 2025-12-19 12:00:00 +0800
+date: 2025-12-19 09:00:00 +0800
 categories: engineering
 tags: [sync, distributed-systems, data-sync, architecture]
 ---
