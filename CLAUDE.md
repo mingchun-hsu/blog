@@ -56,6 +56,19 @@ tags: [tag1, tag2]
 ```
 3. Write content in Markdown below the front matter
 
+## Adding Images to Posts
+
+When adding images to blog posts:
+
+1. Place image files in `assets/images/` directory
+2. Use HTML `<img>` tag (not Markdown syntax) to ensure proper width control
+3. Always include `style="max-width: 100%; height: auto;"` to prevent overflow on smaller screens
+
+Example:
+```html
+<img src="/assets/images/your-image.png" alt="Descriptive alt text" style="max-width: 100%; height: auto;">
+```
+
 ## Theme and Styling
 
 - Uses Minima theme (version ~> 2.5) as base
