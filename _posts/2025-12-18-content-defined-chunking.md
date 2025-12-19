@@ -3,6 +3,7 @@ layout: post
 title: "The Unseen Logic of Chaos: How Letting Data Define Its Own Boundaries Revolutionized Storage"
 date: 2025-12-18 00:00:00
 tags: [data-storage, algorithms, systems]
+image: /assets/images/content-defined-chunking-diagram.png
 ---
 
 <img src="/assets/images/content-defined-chunking-diagram.png" alt="Smarter Data Slicing: A Guide to Content-Defined Chunking" style="max-width: 100%; width: 800px; height: auto; display: block; margin: 0 auto;">

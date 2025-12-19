@@ -4,6 +4,7 @@ title: "Architecting a Resilient File Synchronization Service for Modern Operati
 date: 2025-11-22 12:00:00 +0800
 categories: engineering
 tags: [file-sync, architecture, distributed-systems, cloud-storage]
+image: /assets/images/modern-sync-architecture.png
 ---
 
 ## 1.0 Introduction: The Challenges of Modern File Synchronization

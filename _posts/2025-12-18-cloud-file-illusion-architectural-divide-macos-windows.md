@@ -3,6 +3,7 @@ layout: post
 title: "The Cloud File Illusion: The Surprising Architectural Divide Between macOS and Windows"
 date: 2025-12-18 10:00:00 +0800
 tags: [cloud-storage, macos, windows, filesystem, architecture, system-design]
+image: /assets/images/2025-12-18-cloud-file-comparison.png
 ---
 
 <img src="/assets/images/2025-12-18-cloud-file-comparison.png" alt="Cloud file architecture comparison" style="max-width: 100%; height: auto;">
