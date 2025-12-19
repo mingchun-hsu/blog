@@ -81,6 +81,8 @@ Ideally, the server should provide a push mechanism (e.g., webhooks) to proactiv
 
 Implementing this comprehensive suite of capabilities is a significant engineering investment. However, it is this foundation that enables the strategic choices that differentiate a truly modern cloud storage experience from a legacy one.
 
+![The Blueprint for Modern File Synchronization](/assets/images/modern-sync-architecture.png)
+
 ## 5.0 Architectural Crossroads: Evaluating Sync Strategies
 
 With a clear understanding of the server-side requirements, an engineering team faces a critical strategic decision: invest in the comprehensive architecture required for a "Virtual File Sync" experience, or opt for a simpler, more traditional "Standard File Sync" model. Each path has profound implications for backend complexity, user experience, and system performance.
