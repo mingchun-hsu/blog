@@ -81,7 +81,7 @@ Ideally, the server should provide a push mechanism (e.g., webhooks) to proactiv
 
 Implementing this comprehensive suite of capabilities is a significant engineering investment. However, it is this foundation that enables the strategic choices that differentiate a truly modern cloud storage experience from a legacy one.
 
-![The Blueprint for Modern File Synchronization](/assets/images/modern-sync-architecture.png)
+<img src="/assets/images/modern-sync-architecture.png" alt="The Blueprint for Modern File Synchronization" style="max-width: 100%; height: auto;">
 
 ## 5.0 Architectural Crossroads: Evaluating Sync Strategies
 
