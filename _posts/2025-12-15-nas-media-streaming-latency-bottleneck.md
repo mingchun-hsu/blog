@@ -15,8 +15,6 @@ This white paper will argue that this poor performance is not caused by insuffic
 
 This document will deconstruct the technical reasons for this performance gap. We will first debunk the bandwidth myth, then analyze how the operational design of protocols like SMB and NFS creates cumulative delays. Finally, we will demonstrate why dedicated media servers (e.g., Plex, Jellyfin) that utilize HTTP-based streaming are the essential and correct solution for achieving a smooth, reliable viewing experience.
 
----
-
 ## 2.0 Deconstructing the Bandwidth Misconception
 
 A primary reason users misdiagnose media playback issues is the belief that high-resolution video requires a massive amount of network bandwidth. This assumption can lead to unnecessary and expensive upgrades to network hardware that fail to solve the underlying problem. To correctly diagnose performance issues, it is strategically important to first understand the actual data requirements of modern video streaming.
@@ -32,8 +30,6 @@ An analysis of typical bitrates for common video resolutions reveals a surprisin
 To translate these figures into a more intuitive metric, consider the requirement for a high-quality 4K video encoded with the efficient H.265 (HEVC) codec. At a bitrate of 20 Megabits per second (Mbps), the actual data rate is a mere 2.5 Megabytes per second (MB/s). This is a trivial amount of data for even a basic 1 Gigabit Ethernet home network to handle, which theoretically supports over 100 MB/s.
 
 The conclusion is unequivocal: available network bandwidth typically exceeds the required video bitrate by a factor of 10 or more. Therefore, network saturation is not the cause of playback stuttering. The player is not starved because the data pipe is too small; it is starved because the rhythm of data delivery is unstable. This pivots our attention from the amount of data (bandwidth) to the real culprit: the method of its delivery, dictated by protocol design and latency.
-
----
 
 ## 3.0 The True Bottleneck: Protocol Design and Cumulative Latency
 
@@ -75,8 +71,6 @@ Under these conditions, the "many small round-trips" behavior of SMB/NFS becomes
 
 The same video file that is "barely acceptable" over SMB on a low-latency LAN can become effectively unwatchable when accessed via remote P2P over NAT traversal, even though the raw bandwidth on both ends (e.g., 100 Mbps home fiber) remains more than sufficient. The combination of protocol chattiness, higher RTT, and jitter exposes the latency bottleneck in its most severe form.
 
----
-
 ## 4.0 The Solution: Media Servers and HTTP-Based Streaming
 
 Media server applications like Plex, Emby, Jellyfin, and MiniDLNA solve the playback problem not by "making the network faster," but by fundamentally changing the data transfer methodology. They replace the inefficient, chatty file access paradigm with HTTP-based streaming protocols, which are purpose-built to mitigate the impact of latency and deliver media efficiently.
@@ -96,8 +90,6 @@ The advantages of HTTP-based streaming for media are significant:
   As a value-added feature, media servers can also perform transcoding. If a playback device does not support a particular video format or the bitrate is too high, the server can convert the media on-the-fly into a compatible, lower-bitrate stream. This prevents client-side overload and ensures smooth playback across a wide range of devices.
 
 Revisiting our example of a 20 ms network latency, the difference becomes stark. An SMB/NFS transfer may involve thousands of latency-affected round-trips, each contributing to an unstable data flow. In contrast, an HTTP stream delivering the same content may only require a handful of requests. The impact of the 20 ms latency becomes negligible, allowing the player's buffer to remain full and the viewing experience to be perfectly smooth. By aligning the data delivery method with the needs of the application, media servers transform a problematic experience into a seamless one.
-
----
 
 ## 5.0 Conclusion: A Best Practice for NAS-Based Media Playback
 

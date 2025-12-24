@@ -16,8 +16,6 @@ A team that stops contributing is not apathetic. It is reacting to a structure t
 
 To fix this, we must diagnose the real organizational pathologies behind the silence.
 
----
-
 ## 1. The Cause: Centralized Power and Suppressed Dissent
 
 The root of a silent team is rarely incompetence or lack of initiative.
@@ -34,8 +32,6 @@ Over time, the team learns the most efficient survival strategy:
 
 **"Whatever you want, I'll just follow."**
 
----
-
 ## 2. The Environment: Psychological Safety Collapses
 
 This dynamic does not exist in isolation. Its first casualty is **psychological safety**, the factor Google's Project Aristotle identified as the most important predictor of team performance.
@@ -47,8 +43,6 @@ Psychological safety erodes when:
 - Mistakes become liabilities instead of learning opportunities.
 
 Without safety, employees adapt by limiting risk. They avoid proposing ideas, avoid challenging faulty logic, and avoid admitting problems. Innovation slows not because the team lacks creativity, but because the environment has made creativity dangerous.
-
----
 
 ## 3. The Result: Learned Helplessness Becomes the Operating Mode
 
@@ -62,8 +56,6 @@ This creates a psychological pattern known as *learned helplessness*. It transfo
 After enough cycles, the rational strategy becomes:
 
 **Do nothing beyond what is required.**
-
----
 
 ## Conclusion: Don't Fix the Symptom—Fix the System
 
