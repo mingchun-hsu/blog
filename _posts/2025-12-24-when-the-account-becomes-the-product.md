@@ -17,8 +17,6 @@ This idea challenges a decade of mobile-first thinking, but it reflects a profou
 
 The mobile app is no longer the product. It is merely a temporary face for something much larger.
 
----
-
 ## Your Content Left the Phone a Long Time Ago
 
 The mobile app is largely a vessel for presentation. For the vast majority of modern services, the core components do not live on the device in your hand.
@@ -30,8 +28,6 @@ The mobile app is largely a vessel for presentation. For the vast majority of mo
 The app itself does not own the content, nor does it define user behavior. What we often call *"app functionality"* is, in reality, a projection of server-side capabilities onto a mobile screen.
 
 The phone has become a viewport, not a source of truth.
-
----
 
 ## The Account Is the Only Product That Truly Exists
 
@@ -50,8 +46,6 @@ The conclusion is difficult to avoid:
 > **The app is just one view of the account.**
 
 In this model, the long-term asset is no longer the app install—it is the persistent account relationship. Devices become replaceable. Sessions become ephemeral. The account is what endures.
-
----
 
 ## The Web Is Erasing Native's Last Defenses
 
@@ -72,8 +66,6 @@ If both **logic** and **presentation** are steadily drifting away from the devic
 
 **What does the device itself still uniquely offer?**
 
----
-
 ## Mobile's True Value Is Touching the Physical World
 
 If the server owns the logic and the web can handle most presentation, why does the mobile app still exist at all?
@@ -89,8 +81,6 @@ A native mobile app remains essential when a service must directly interact with
 - OS-level security features (biometrics, secure enclaves)
 
 In these cases, the app is no longer the product itself—it is a hardware adapter for an account-based service.
-
----
 
 ## Mobile's Other Defensible Edge: Local Networks
 
@@ -109,8 +99,6 @@ In many IoT, media, and enterprise scenarios, the mobile app is not merely a UI.
 
 Once again, the pattern holds:
 the mobile app's value does not come from owning logic or content, but from its proximity to the physical world—this time, through the network itself.
-
----
 
 ## Not the Death of Mobile, but a Change of Role
 
