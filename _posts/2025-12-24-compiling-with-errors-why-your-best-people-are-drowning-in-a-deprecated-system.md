@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Compiling with Errors: Why Your Best People Are Drowning in a Deprecated System"
-date: 2025-12-24 10:00:00
+date: 2025-12-24
 tags: [management, leadership, organizational-change, software-metaphors]
 image: /assets/images/compiling-with-errors.webp
 ---
