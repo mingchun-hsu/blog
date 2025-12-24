@@ -14,8 +14,6 @@ The core thesis of this paper is that this industry-wide transformation was prim
 
 This paper will analyze this technological evolution, examining its architectural underpinnings, the critical role of cloud services in scaling this new model, and the profound, irreversible impact it has had on the entire storage industry, including traditional Network Attached Storage (NAS) vendors. Understanding this shift is no longer optional for architects, product managers, or engineers in the storage space; the content-centric model has become the prevailing standard, and its principles now dictate the terms of success.
 
----
-
 ## 2.0 The Foundational Model: Digital Photography in the File-Centric Era
 
 Before the advent of the smartphone, the landscape of digital photography was straightforward and universally understood. In this period, the file system was not merely a storage layer; it was the primary user interface for photo management. This model was simple and direct, built on concepts that mirrored the physical world of paper documents in filing cabinets.
@@ -30,8 +28,6 @@ The typical user workflow was a tangible, manual process rooted entirely in file
 In this paradigm, the file system was the central organizing metaphor. Concepts we now take for granted were direct mappings of file system properties. An "album" was nothing more than a folder. A "timeline" was simply the result of sorting files by name or modification date. The entire burden of organization, curation, and management was placed squarely on the end-user.
 
 Storage providers, including NAS manufacturers, played a limited role: they offered unmanaged storage primitives via block (iSCSI) or file-level (SMB, NFS) protocols. They provided a network share—a digital plot of land—but none of the tools to cultivate it. This simple, file-based model provided a stable foundation for years but was unprepared for the disruption that would arrive with the first iPhone.
-
----
 
 ## 3.0 The Architectural Catalyst: iOS and the Rise of the Photo-as-Object Model
 
@@ -67,8 +63,6 @@ This choice is not merely a UI convenience—it is a direct manifestation of the
 
 Importantly, most users instinctively choose the Photos Library option, demonstrating how thoroughly the content-centric paradigm has reshaped user expectations. The file system has become the fallback, not the default.
 
----
-
 ## 4.0 Scaling the New Paradigm: iCloud and the Synchronization of Object States
 
 iCloud Photo Library extended the on-device object model into a distributed cloud system. Its purpose is not merely to store files but to maintain consistency across a distributed photo database spanning all of a user's devices.
@@ -99,8 +93,6 @@ Such formats break the "one file = one photo" paradigm. A native file browser re
 
 Thus, iCloud synchronizes *object state*, not files.
 
----
-
 ## 5.0 The Systemic Response: When the File System Becomes an Interface
 
 As cloud usage grew, operating systems adapted by transforming the file system into a façade for cloud-backed content. Technologies like:
@@ -119,8 +111,6 @@ This shift demotes the file system from the authoritative source of data to an i
 * intelligent caching.
 
 Legacy applications that expect local block-level file access face compatibility and performance issues. The file system is no longer the primary interface—and storage vendors must reckon with this reality.
-
----
 
 ## 6.0 The Ripple Effect: The New Mandate for NAS and Storage Providers
 
@@ -148,8 +138,6 @@ This shift represents a fundamental architectural divide:
 | Audience: Scripts, machines | Audience: End-users, multi-device |
 
 The file system has been relegated to infrastructure; the content database is now the core product.
-
----
 
 ## 7.0 Conclusion: The Enduring Dominance of the Data Model
 
