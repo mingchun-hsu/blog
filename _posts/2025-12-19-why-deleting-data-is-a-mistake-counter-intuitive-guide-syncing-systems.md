@@ -4,6 +4,7 @@ title: "Why Deleting Data Is a Mistake: A Counter-intuitive Guide to Syncing Sys
 date: 2025-12-19 09:00:00 +0800
 categories: engineering
 tags: [sync, distributed-systems, data-sync, architecture]
+excerpt: "Three counter-intuitive truths about data sync: timestamps can't guarantee causality, deletions must be tracked not executed, and operation logs beat final-state snapshots for distributed systems."
 ---
 
 ## 1.0 Introduction: The Deceptively Simple Problem of Keeping Things in Sync

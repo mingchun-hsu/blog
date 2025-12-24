@@ -3,6 +3,7 @@ layout: post
 title: "The Cloud File Illusion: The Surprising Architectural Divide Between macOS and Windows"
 date: 2025-12-18 10:00:00 +0800
 tags: [cloud-storage, macos, windows, filesystem, architecture, system-design]
+excerpt: "macOS treats files as database-managed items with stable identifiers, while Windows uses filesystem-first placeholders. This fundamental difference shapes how cloud storage apps are built on each platform."
 image: /assets/images/cloud-file-comparison.webp
 ---
 

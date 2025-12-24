@@ -3,6 +3,7 @@ layout: post
 title: "The Object Imperative: How Content-Centric Architectures Redefined the Digital Storage Landscape"
 date: 2025-12-14 00:00:00
 tags: [architecture, storage, cloud, iOS, database]
+excerpt: "How iOS's database-managed photo architecture transformed the industry from file-centric to content-centric paradigms, reshaping user expectations and forcing the entire storage industry to adapt."
 ---
 
 ## 1.0 Introduction: The Paradigm Shift from Files to Content

@@ -3,6 +3,7 @@ layout: post
 title: "5 Counter-Intuitive Lessons from CQRS That Will Simplify Your Code"
 date: 2025-12-24
 tags: [cqrs, architecture, software-design, design-patterns]
+excerpt: "CQRS isn't about complexity—it's about separating read and write models to tame the monster of overloaded data models that try to serve too many masters."
 ---
 
 ## Introduction: The Monster in Your Model

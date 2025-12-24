@@ -4,6 +4,7 @@ title: "Architecting a Resilient File Synchronization Service for Modern Operati
 date: 2025-11-22 12:00:00 +0800
 categories: engineering
 tags: [file-sync, architecture, distributed-systems, cloud-storage]
+excerpt: "Deep dive into the engineering challenges of building robust file synchronization services that integrate with modern OS frameworks like Apple's File Provider, covering stable identifiers, version control, and incremental sync mechanisms."
 image: /assets/images/modern-sync-architecture.webp
 ---
 

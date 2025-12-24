@@ -3,6 +3,7 @@ layout: post
 title: "White Paper: The Latency Bottleneck - Why File Access Protocols Degrade NAS Media Streaming Performance"
 date: 2025-12-15 00:00:00
 tags: [networking, nas, media-streaming, performance, technical]
+excerpt: "Technical analysis of why SMB/NFS protocols cause streaming stutters despite high bandwidth, and why network latency, not bandwidth, is the real bottleneck for NAS media playback."
 ---
 
 ## 1.0 Introduction: The Common NAS Media Playback Paradox

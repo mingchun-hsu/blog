@@ -3,6 +3,7 @@ layout: post
 title: "An Architect's Guide to Modern Authentication and Trust Models"
 date: 2025-11-22 00:00:00
 tags: [security, authentication, PKI, TLS, architecture]
+excerpt: "Comprehensive guide to building multi-layered security architectures, from cryptographic foundations and PKI to advanced hardware-based authentication mechanisms and defense-in-depth strategies."
 ---
 
 ## 1.0 Introduction: The Imperative for Layered Security

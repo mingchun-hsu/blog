@@ -3,6 +3,7 @@ layout: post
 title: "When the Account Becomes the Product, What's Left for the Mobile App?"
 date: 2025-12-24
 tags: [mobile, product-design, architecture, web, cloud]
+excerpt: "Mobile apps are no longer the product—they're viewports. Your data, state, and processes live in the cloud, and the account-centric architecture has fundamentally reshaped modern digital services."
 ---
 
 ## Introduction: The Counter-Intuitive Question

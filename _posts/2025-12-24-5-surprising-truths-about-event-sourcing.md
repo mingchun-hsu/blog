@@ -3,6 +3,7 @@ layout: post
 title: "5 Surprising Truths About Event Sourcing That Will Change How You Code"
 date: 2025-12-24
 tags: [event-sourcing, architecture, software-design, data-modeling]
+excerpt: "Event Sourcing preserves the entire history of your system by treating events as the single source of truth, making debugging and understanding complex business logic dramatically easier."
 ---
 
 ## Introduction: The Mystery of the Broken State

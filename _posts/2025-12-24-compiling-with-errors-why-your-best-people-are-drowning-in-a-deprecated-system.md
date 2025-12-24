@@ -3,6 +3,7 @@ layout: post
 title: "Compiling with Errors: Why Your Best People Are Drowning in a Deprecated System"
 date: 2025-12-24
 tags: [management, leadership, organizational-change, software-metaphors]
+excerpt: "When organizations shift from problem-driven to exploration-driven work, they secretly rewrite the success contract without updating evaluation systems, leaving high performers disoriented and drowning."
 image: /assets/images/compiling-with-errors.webp
 ---
 

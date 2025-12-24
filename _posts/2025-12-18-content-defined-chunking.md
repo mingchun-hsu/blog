@@ -3,6 +3,7 @@ layout: post
 title: "The Unseen Logic of Chaos: How Letting Data Define Its Own Boundaries Revolutionized Storage"
 date: 2025-12-18 00:00:00
 tags: [data-storage, algorithms, systems]
+excerpt: "Content-Defined Chunking solves the shift problem by letting data define its own boundaries using rolling hashes, making backups and version control efficient even when single bytes change."
 image: /assets/images/content-defined-chunking-diagram.webp
 ---
 
