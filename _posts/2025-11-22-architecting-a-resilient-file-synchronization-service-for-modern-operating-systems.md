@@ -4,7 +4,7 @@ title: "Architecting a Resilient File Synchronization Service for Modern Operati
 date: 2025-11-22 12:00:00 +0800
 categories: engineering
 tags: [file-sync, architecture, distributed-systems, cloud-storage]
-image: /assets/images/modern-sync-architecture.png
+image: /assets/images/modern-sync-architecture.webp
 ---
 
 ## 1.0 Introduction: The Challenges of Modern File Synchronization
@@ -82,7 +82,7 @@ Ideally, the server should provide a push mechanism (e.g., webhooks) to proactiv
 
 Implementing this comprehensive suite of capabilities is a significant engineering investment. However, it is this foundation that enables the strategic choices that differentiate a truly modern cloud storage experience from a legacy one.
 
-<img src="/assets/images/modern-sync-architecture.png" alt="The Blueprint for Modern File Synchronization" style="max-width: 100%; height: auto;">
+<img src="/assets/images/modern-sync-architecture.webp" alt="The Blueprint for Modern File Synchronization" style="max-width: 100%; height: auto;">
 
 ## 5.0 Architectural Crossroads: Evaluating Sync Strategies
 
