@@ -50,11 +50,13 @@ Deployment is automated via GitHub Actions (`.github/workflows/jekyll-gh-pages.y
 ---
 layout: post
 title: "Your Post Title"
-date: YYYY-MM-DD HH:MM:SS
+date: YYYY-MM-DD
 tags: [tag1, tag2]
 ---
 ```
 3. Write content in Markdown below the front matter
+
+**Important**: Use date-only format (YYYY-MM-DD) without time in the front matter.
 
 ## Adding Images to Posts
 
