@@ -4,10 +4,10 @@ title: "Sockets, Ports, and FDs Aren't What You Think: 3 Operating System Concep
 date: 2025-12-24
 tags: [operating-systems, system-design, architecture]
 excerpt: "Three counterintuitive concepts that clarify everything from performance trade-offs in media streaming to the security model of mobile operating systems: control plane vs. data plane separation, capability-based handles, and OS philosophy of mechanisms vs. policy enforcement."
-image: /assets/images/control-vs-data-plane.png
+image: /assets/images/control-vs-data-plane.webp
 ---
 
-<img src="/assets/images/control-vs-data-plane.png" alt="Control vs. Data: The Two Worlds of OS Communication" style="max-width: 100%; height: auto;">
+<img src="/assets/images/control-vs-data-plane.webp" alt="Control vs. Data: The Two Worlds of OS Communication" style="max-width: 100%; height: auto;">
 
 ## 1.0 Introduction: The Tools We Use vs. the Concepts We Miss
 
