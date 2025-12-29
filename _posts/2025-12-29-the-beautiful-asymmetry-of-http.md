@@ -4,6 +4,7 @@ title: "The Beautiful Asymmetry of HTTP: Why If-Match and If-None-Match Are Not 
 date: 2025-12-29
 tags: [HTTP, web-development, architecture]
 image: /assets/images/http-conditional-headers.webp
+excerpt: "If-None-Match and If-Match seem like twins, but they're deliberately asymmetric. One optimizes reads for performance, the other guards writes for correctness. This design reveals HTTP's deep understanding of the fundamentally different risks between reading and writing data."
 ---
 
 <img src="/assets/images/http-conditional-headers.webp" alt="HTTP Conditional Headers - If-Match and If-None-Match" style="max-width: 100%; height: auto;">
