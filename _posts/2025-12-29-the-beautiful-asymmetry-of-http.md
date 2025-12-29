@@ -15,8 +15,6 @@ If you're a developer working with web APIs, you've encountered HTTP conditional
 
 But have you ever stopped to wonder why they behave so differently? Why one is obsessed with saving bandwidth and the other seems to ignore it completely? The answer reveals a deliberate and brilliant asymmetry in their design. They are not a matching pair but two different tools for two very different jobs—reads and writes.
 
----
-
 ## 1. The Two Sides of the Coin: Asymmetry of Purpose
 
 **Takeaway 1: One is for Performance, the Other is for Correctness.**
@@ -28,8 +26,6 @@ The fundamental difference between If-None-Match and If-Match lies in their prim
 
 This distinction is the first and most crucial piece of the puzzle. Understanding that one header serves performance while the other serves correctness unlocks why the rest of their behavior is so different.
 
----
-
 ## 2. Different Jobs, Different Answers: Asymmetry of Response
 
 **Takeaway 2: A "Success" for One Means "Do Less," a "Failure" for the Other Means "Stop Everything."**
@@ -40,8 +36,6 @@ Their different purposes lead to completely different response semantics on thei
 * **If-Match (for writes):** When the condition fails (the client's ETag does not match the server's), the server responds with 412 Precondition Failed. The goal is to "directly refuse," acting as a circuit breaker to halt a state-corrupting operation before it can do any damage.
 
 This makes perfect sense from a protocol design perspective. For a read operation, sending nothing is a successful optimization. For a write operation, proceeding with an outdated view of the data is a critical error that must be stopped immediately.
-
----
 
 ## 3. The Core Insight: Why This Asymmetry Is Essential
 
@@ -58,8 +52,6 @@ Let's break down this central principle:
 
 The asymmetry isn't an oversight; it's a deliberate design based on the fundamentally different risk models of reading versus writing data.
 
----
-
 ## 4. Busting a Common Myth: The Traffic Question
 
 **Takeaway 3: If-Match Doesn't Save Bandwidth Because It Can't.**
@@ -67,8 +59,6 @@ The asymmetry isn't an oversight; it's a deliberate design based on the fundamen
 A common question that arises from this analysis is: "Why doesn't If-Match save traffic by preventing the request body from being sent if the precondition fails?"
 
 The answer is that If-Match provides a semantic contract, not a transport optimization. The server must have the payload in hand to make an informed decision. The If-Match check doesn't ask, "Can I skip this upload?" It asks, "Now that I have this upload, is it safe to apply?" The check is semantic, not a transport-layer shortcut. Its check is about application-layer correctness, not saving bytes on the wire.
-
----
 
 ## Conclusion: A Deliberate Design for a Messy Reality
 
