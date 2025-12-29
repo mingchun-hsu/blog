@@ -4,7 +4,10 @@ title: "Why Your Team Went Silent: It's Not Apathy—It's a Warning Sign"
 date: 2025-12-15 00:00:00
 tags: [leadership, team-dynamics, organizational-culture, psychology]
 excerpt: "Team silence isn't apathy or agreement—it's a symptom of centralized power, suppressed dissent, and organizational structures that teach people their contributions don't matter."
+image: /assets/images/team-went-silent.webp
 ---
+
+<img src="/assets/images/team-went-silent.webp" alt="A winding path leading forward with a panoramic view" style="max-width: 100%; height: auto;">
 
 You notice it in a meeting. The R&D team, once a source of energetic debate, sits quietly. You ask for ideas and receive blank stares. You propose a new direction, and no one objects—but no one contributes either.
 
