@@ -52,24 +52,52 @@ layout: post
 title: "Your Post Title"
 date: YYYY-MM-DD
 tags: [tag1, tag2]
+excerpt: "A compelling 1-2 sentence summary that appears in post lists and SEO descriptions."
+image: /assets/images/descriptive-filename.webp
 ---
 ```
 3. Write content in Markdown below the front matter
 
-**Important**: Use date-only format (YYYY-MM-DD) without time in the front matter.
+**Important Notes**:
+- Use date-only format (YYYY-MM-DD) without time in the front matter
+- Always include an `excerpt` - it appears in the post list and improves SEO
+- Always include an `image` - it serves as the thumbnail in post lists
 
 ## Adding Images to Posts
 
-When adding images to blog posts:
+### Image Preparation
 
-1. Place image files in `assets/images/` directory
-2. Use HTML `<img>` tag (not Markdown syntax) to ensure proper width control
-3. Always include `style="max-width: 100%; height: auto;"` to prevent overflow on smaller screens
+1. **Convert to WebP format** for optimal performance:
+```bash
+cwebp input-image.png -o assets/images/descriptive-name.webp -q 85
+```
+
+2. **Use descriptive filenames** that relate to the content (e.g., `locks-exclusive-promise.webp`, `bff-architecture.webp`, not `unnamed.webp` or `image1.webp`)
+
+3. **Place image files** in `assets/images/` directory
+
+### Adding Images to Post Content
+
+1. Use HTML `<img>` tag (not Markdown syntax) to ensure proper width control
+2. Always include `style="max-width: 100%; height: auto;"` to prevent overflow on smaller screens
+3. Write descriptive alt text for accessibility and SEO
 
 Example:
 ```html
-<img src="/assets/images/your-image.png" alt="Descriptive alt text" style="max-width: 100%; height: auto;">
+<img src="/assets/images/your-image.webp" alt="Descriptive explanation of what the image shows" style="max-width: 100%; height: auto;">
 ```
+
+### Adding Thumbnail Images
+
+Add the `image` field to your post's front matter:
+```yaml
+image: /assets/images/your-image.webp
+```
+
+This image will:
+- Display as the thumbnail in post lists on the homepage
+- Be used for social media previews (Open Graph, Twitter Cards)
+- Improve the visual appeal of your blog
 
 ## Theme and Styling
 
