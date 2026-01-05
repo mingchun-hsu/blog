@@ -11,6 +11,8 @@ We've all been there. You click the "Pay Now" button, the spinner spins, and... 
 
 This common scenario can lead to disastrous side effects: duplicate charges, double-booked orders, or redundant data entries. The professional-grade solution to this problem is the idempotency key, a mechanism that transforms unsafe network retries into completely safe, predictable operations. Let's explore the critical rules for implementing them correctly.
 
+<img src="/assets/images/idempotency-key-rules.webp" alt="Idempotency key implementation diagram showing the 6 critical rules for handling network retries safely" style="max-width: 100%; height: auto;">
+
 ## 1. It's Not a Feature, It's a Safety Contract
 
 The primary purpose of an idempotency key isn't to be a "cool" or advanced API feature. Its real job is to establish a contract with the client that guarantees network retries are safe and predictable. This is absolutely essential for critical, non-idempotent operations that create side effects, such as `POST /payments/charge`, `POST /orders`, or `POST /transfers`.
