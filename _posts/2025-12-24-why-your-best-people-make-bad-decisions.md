@@ -4,6 +4,7 @@ title: "Why Your Best People Make Bad Decisions: It's Not Them, It's the System"
 date: 2025-12-24
 tags: [management, leadership, organizational-design, decision-making]
 excerpt: "The Agency Problem: when decision-makers don't bear the consequences of their choices, even intelligent people make corrosive decisions. The solution is redesigning the system itself."
+image: /assets/images/mountain-trail-decision-path.webp
 ---
 
 ## Introduction: The Unseen Force Driving Organizational Failure
