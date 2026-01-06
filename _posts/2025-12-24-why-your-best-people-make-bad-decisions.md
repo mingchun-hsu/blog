@@ -7,6 +7,11 @@ excerpt: "The Agency Problem: when decision-makers don't bear the consequences o
 image: /assets/images/mountain-trail-decision-path.webp
 ---
 
+<figure style="margin: 0;">
+  <img src="/assets/images/mountain-trail-decision-path.webp" alt="A mountain hiking trail leading through rolling hills towards distant peaks" style="max-width: 100%; height: auto;">
+  <figcaption style="text-align: center; font-style: italic; color: #666; margin-top: 0.5em;">Photo by me</figcaption>
+</figure>
+
 ## Introduction: The Unseen Force Driving Organizational Failure
 
 Consider a familiar scene: a critical project, staffed with intelligent, dedicated people, begins to derail. Deadlines slip, unforeseen crises erupt, and a palpable disconnect forms between management's vision and the team's reality. When the inevitable failure occurs, the search for blame begins, yet it rarely lands on the true culprit.
