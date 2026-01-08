@@ -26,6 +26,8 @@ Here is how the COW flow contrasts with the inefficient "always-copy" method:
 * **Reading**: Multiple readers access the exact same data simultaneously with zero overhead. No copies are made.
 * **Writing**: The moment a writer needs to make a change—and only then—a copy is created. The writer modifies the new copy, leaving the original untouched for others.
 
+<img src="/assets/images/copy-on-write-mechanism.webp" alt="Diagram illustrating the Copy-on-Write mechanism showing how multiple readers share the same data while writers create new copies, followed by an atomic pointer switch" style="max-width: 100%; height: auto;">
+
 The final step is an "atomic" switch. Once the modifications on the new copy are complete, the system instantly updates a pointer to designate the new version as the current one. This instantaneous handoff is the key to achieving atomicity—the guarantee that an operation is either entirely successful or not at all. Users only ever see the complete old version or the complete new version, never a dangerous state in between.
 
 This core idea can be summarized perfectly by one guiding principle:
