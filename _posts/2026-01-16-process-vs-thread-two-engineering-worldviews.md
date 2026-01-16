@@ -11,6 +11,8 @@ image: /assets/images/process-thread-worldviews.webp
 
 The distinction between a Process and a Thread is commonly dismissed as a dry technical definition. This paper contends that such a view is analytically impotent. The choice between these primitives is not merely technical but represents a foundational design philosophy—a value judgment on risk, isolation, and efficiency embedded within an operating system. This philosophy, in turn, forges engineering intuition, dictates architectural patterns, and cultivates the very culture of a platform's developer ecosystem. We will contrast the process-centric worldview of Unix, which enshrines isolation as its highest value, with the thread-centric worldview of the NT kernel, which prioritizes shared-state efficiency. By examining the Android operating system as a masterful hybrid of these competing models, we reveal that the friction engineers experience when moving between platforms is not a failure of skill, but a profound clash of irreconcilable worldviews.
 
+<img src="/assets/images/process-thread-worldviews.webp" alt="Visual representation of the philosophical divide between Unix's process-centric and NT's thread-centric worldviews" style="max-width: 100%; height: auto;">
+
 ---
 
 ## 1.0 A Contradiction in Engineering Instincts
