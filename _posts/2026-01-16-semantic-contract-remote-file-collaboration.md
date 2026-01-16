@@ -78,7 +78,9 @@ The following table provides a clear, actionable map between the scenario and th
 | Remote + Single-User Access | Personal Remote Access Tool (e.g., WebDAV/Taildrive) |
 | Remote + Multi-User Collaboration | Cloud File Service with Optimistic Locking (e.g., File Provider model) |
 
+<a href="/assets/images/semantic-contract-framework.webp" target="_blank">
 <img src="/assets/images/semantic-contract-framework.webp" alt="Framework diagram showing the semantic contracts and architectural models for different remote file collaboration scenarios, illustrating the relationship between network type, user access patterns, and appropriate synchronization strategies" style="max-width: 100%; height: auto;">
+</a>
 
 The most frequent and catastrophic error in remote file system design is confusing the models for a NAS and a cloud file service. A NAS is a filesystem appliance; its purpose is to project POSIX semantics across a reliable, low-latency network. A cloud file service is an object storage and versioning engine; its purpose is to manage inevitable state conflicts across an unreliable, high-latency network. Attempting to build the latter using the assumptions of the former is the primary source of architectural failure.
 
