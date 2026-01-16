@@ -31,6 +31,16 @@ layout: default
 
 <!-- GLightbox for image lightbox effect -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+<style>
+  /* Fix layout shift when lightbox opens */
+  html {
+    overflow-y: scroll; /* Always show scrollbar space to prevent layout shift */
+  }
+
+  body.glightbox-open {
+    overflow: hidden;
+  }
+</style>
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script>
   const lightbox = GLightbox({
