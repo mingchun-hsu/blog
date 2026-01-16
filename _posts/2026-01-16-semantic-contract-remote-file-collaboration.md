@@ -78,7 +78,7 @@ The following table provides a clear, actionable map between the scenario and th
 | Remote + Single-User Access | Personal Remote Access Tool (e.g., WebDAV/Taildrive) |
 | Remote + Multi-User Collaboration | Cloud File Service with Optimistic Locking (e.g., File Provider model) |
 
-<a href="/assets/images/semantic-contract-framework.webp" target="_blank">
+<a href="/assets/images/semantic-contract-framework.webp" class="glightbox">
 <img src="/assets/images/semantic-contract-framework.webp" alt="Framework diagram showing the semantic contracts and architectural models for different remote file collaboration scenarios, illustrating the relationship between network type, user access patterns, and appropriate synchronization strategies" style="max-width: 100%; height: auto;">
 </a>
 
