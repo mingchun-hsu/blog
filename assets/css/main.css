@@ -225,7 +225,73 @@ footer {
   font-size: 0.9em;
 }
 
+/* Post layout with TOC sidebar */
+.post-layout {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.toc-sidebar {
+  position: absolute;
+  left: -280px;
+  top: 0;
+  width: 240px;
+}
+
+.toc {
+  background-color: #2d2d2d;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.toc-title {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #e4e4e4;
+  border-bottom: 2px solid #444;
+  padding-bottom: 10px;
+}
+
+.toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toc-item {
+  margin-bottom: 8px;
+}
+
+.toc-h3 {
+  margin-left: 15px;
+  font-size: 0.9em;
+}
+
+.toc-link {
+  color: #999;
+  text-decoration: none;
+  display: block;
+  padding: 4px 0;
+  transition: color 0.2s ease;
+  line-height: 1.4;
+}
+
+.toc-link:hover {
+  color: #66b3ff;
+}
+
+.post-layout .post {
+  width: 100%;
+}
+
 /* Responsive */
+@media (max-width: 1360px) {
+  .toc-sidebar {
+    display: none;
+  }
+}
+
 @media (max-width: 600px) {
   body {
     padding: 15px;
