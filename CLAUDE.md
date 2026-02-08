@@ -65,16 +65,21 @@ image: /assets/images/descriptive-filename.webp
 
 ## Adding Images to Posts
 
-### Image Preparation
+When the user provides an image for a blog post, follow this complete workflow:
 
-1. **Convert to WebP format** for optimal performance:
+1. **Convert to WebP format** with a descriptive filename:
 ```bash
-cwebp input-image.png -o assets/images/descriptive-name.webp -q 85
+cwebp "assets/images/original-name.png" -o assets/images/descriptive-name.webp -q 85
 ```
 
-2. **Use descriptive filenames** that relate to the content (e.g., `locks-exclusive-promise.webp`, `bff-architecture.webp`, not `unnamed.webp` or `image1.webp`)
+2. **Add to front matter** as the thumbnail image:
+```yaml
+image: /assets/images/descriptive-name.webp
+```
 
-3. **Place image files** in `assets/images/` directory
+3. **Embed in article content** at an appropriate location (e.g., after introducing the concept the image illustrates)
+
+4. **Use descriptive filenames** that relate to the content (e.g., `locks-exclusive-promise.webp`, `bff-architecture.webp`, not `unnamed.webp` or `image1.webp`)
 
 ### Adding Images to Post Content
 
