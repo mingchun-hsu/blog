@@ -3,29 +3,35 @@ layout: default
 title: Home
 ---
 
-{% assign all_tags = "" | split: "" %}
+{% assign all_tags_lower = "" | split: "" %}
+{% assign all_tags_display = "" | split: "" %}
 {% for post in site.posts %}
   {% for tag in post.tags %}
     {% assign tag_lower = tag | downcase %}
-    {% unless all_tags contains tag_lower %}
-      {% assign all_tags = all_tags | push: tag_lower %}
+    {% unless all_tags_lower contains tag_lower %}
+      {% assign all_tags_lower = all_tags_lower | push: tag_lower %}
+      {% assign all_tags_display = all_tags_display | push: tag %}
     {% endunless %}
   {% endfor %}
 {% endfor %}
 
 {% assign tag_data = "" | split: "" %}
-{% for tag in all_tags %}
-  {% assign count = 0 %}
-  {% for post in site.posts %}
-    {% for post_tag in post.tags %}
-      {% assign post_tag_lower = post_tag | downcase %}
-      {% if post_tag_lower == tag %}
-        {% assign count = count | plus: 1 %}
-      {% endif %}
+{% for i in (0..all_tags_lower.size) %}
+  {% assign tag_lower = all_tags_lower[i] %}
+  {% assign tag_display = all_tags_display[i] %}
+  {% if tag_lower %}
+    {% assign count = 0 %}
+    {% for post in site.posts %}
+      {% for post_tag in post.tags %}
+        {% assign post_tag_lower = post_tag | downcase %}
+        {% if post_tag_lower == tag_lower %}
+          {% assign count = count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
     {% endfor %}
-  {% endfor %}
-  {% assign tag_info = tag | append: ":" | append: count %}
-  {% assign tag_data = tag_data | push: tag_info %}
+    {% assign tag_info = tag_display | append: ":" | append: tag_lower | append: ":" | append: count %}
+    {% assign tag_data = tag_data | push: tag_info %}
+  {% endif %}
 {% endfor %}
 
 <div class="home">
@@ -100,24 +106,28 @@ document.addEventListener('DOMContentLoaded', function() {
   const tagData = [
     {% for item in tag_data %}
       {% assign parts = item | split: ":" %}
-      ["{{ parts[0] }}", {{ parts[1] }}]{% unless forloop.last %},{% endunless %}
+      {display: "{{ parts[0] }}", key: "{{ parts[1] }}", count: {{ parts[2] }}}{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ];
 
-  const maxCount = Math.max(...tagData.map(t => t[1]));
+  const maxCount = Math.max(...tagData.map(t => t.count));
   const minSize = 12 * dpr;
   const maxSize = 40 * dpr;
 
-  const wordList = tagData.map(([tag, count]) => {
+  const tagMap = {};
+  const wordList = tagData.map(({display, key, count}) => {
     const size = minSize + (count / maxCount) * (maxSize - minSize);
-    return [tag, size];
+    tagMap[display] = key;
+    return [display, size];
   });
 
-  const colors = ['#7a8b99', '#8a9bab', '#6b9b8a', '#9a8b7b', '#8b8a9b', '#7b9a9b', '#9b9a7b', '#a0a0a0'];
+  const colors = ['#ffffff', '#e0e0e0', '#c0c0c0', '#a0a0a0', '#888888'];
   let selectedTag = null;
 
   function getColor(word, weight) {
-    return colors[Math.floor(Math.random() * colors.length)];
+    // Larger words get brighter colors
+    const index = Math.min(Math.floor((weight - 12) / 8), colors.length - 1);
+    return colors[Math.max(0, colors.length - 1 - index)];
   }
 
   function filterPosts() {
@@ -128,9 +138,10 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
       selectedTagsDisplay.textContent = selectedTag;
       clearButton.style.display = 'inline-block';
+      const tagKey = tagMap[selectedTag];
       posts.forEach(post => {
         const postTags = post.dataset.tags.split(',');
-        post.style.display = postTags.includes(selectedTag) ? '' : 'none';
+        post.style.display = postTags.includes(tagKey) ? '' : 'none';
       });
     }
   }
@@ -142,7 +153,9 @@ document.addEventListener('DOMContentLoaded', function() {
     fontFamily: 'Google Sans Flex, -apple-system, BlinkMacSystemFont, sans-serif',
     color: getColor,
     backgroundColor: 'transparent',
-    rotateRatio: 0,
+    rotateRatio: 0.3,
+    minRotation: -Math.PI / 2,
+    maxRotation: Math.PI / 2,
     click: function(item) {
       if (item) {
         const tag = item[0];
