@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Architectural Integrity Framework: Evaluating Structural Value vs. Convenience Noise"
-date: 2026-02-24
+date: 2026-02-23
 tags: [architecture, software-design, abstraction, engineering]
 excerpt: "A rigorous framework for distinguishing meaningful abstractions from decorative wrappers—because clean code that consists of endless passthrough layers is a monument to its own complexity, not a high-quality product."
 image: /assets/images/architectural-integrity-framework.webp
